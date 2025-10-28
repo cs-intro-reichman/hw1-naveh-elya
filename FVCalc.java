@@ -5,12 +5,12 @@ public class FVCalc {
 		double ratio = Double.parseDouble(args[1]);
 		int years = Integer.parseInt(args[2]);
 
-		int countSaving = startMoney;
+		double countSaving = startMoney;
 
 		for (int i = 0; i < years; i++) {
 			countSaving += countSaving * (ratio / 100);	
 		}
 
-		System.out.printf("After %d years, $%d saved at %.1f%% will yield $%d", years, startMoney, ratio, countSaving);
+		System.out.printf("After %d years, $%d saved at %.1f%% will yield $%d", years, startMoney, ratio, (int)countSaving);
 	}
 }
