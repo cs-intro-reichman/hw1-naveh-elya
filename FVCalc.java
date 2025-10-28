@@ -11,6 +11,6 @@ public class FVCalc {
 			countSaving += countSaving * (ratio / 100);	
 		}
 
-		System.out.printf("After %d years, $%d saved at %.1f25 will yield $%d", years, startMoney, ratio, countSaving);
+		System.out.printf("After %d years, $%d saved at %.1f%%25 will yield $%d", years, startMoney, ratio, countSaving);
 	}
 }
