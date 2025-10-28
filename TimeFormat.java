@@ -13,5 +13,10 @@ public class TimeFormat {
 		// Does the same with the minutes part of the input.
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
         // Replace this comment with the rest of your code
+
+		int newhours = hours > 12 ? hours - 12 : hours;
+		String format = hours >= 12 ? "PM": "AM";
+
+		System.out.printf("%02d:%02d %s", newhours, minutes, format);
 	}
 }
